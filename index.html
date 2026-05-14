@@ -263,16 +263,19 @@
   .personagem {
     position: absolute;
     bottom: 0;         /* ancora na base do card */
-    top: 0%;
+    top: 9%;
     right: 2%;      /* desloca pra fora lateralmente */
     z-index: 10;       /* fica na frente */
-    height: 62%;      /* maior que o card pra vazar pro topo */
+    height: 55%;
     pointer-events: none;
   }
 </style>
 </head>
 <body>
 
+<div class="panel active" id="tab-hero">
+  <div class="card-wrapper">
+  <img class="personagem" src="teste.png" />
 <div class="card">
   <!-- TABS -->
   <div class="tabs">
@@ -283,9 +286,6 @@
 
   <!-- HERO COSTUME PANEL (default) -->
   
-  <div class="panel active" id="tab-hero">
-    <div class="card-wrapper">
-    <img class="personagem" src="teste.png" />
     <div class="section hero-name-section">
       <span class="label">Hero Name:</span>
       <span class="hero-name-val">santuário</span>
